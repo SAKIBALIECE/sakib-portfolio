@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sakib Ali Portfolio" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, React.js, Next.js" />
+  <meta name="author" content="Sakib Ali" />
+  <meta name="robots" content="noindex" />
+  <meta name="googlebot" content="notranslate" />
+  <meta name="googlebot-news" content="nosnippet" />
+
+  <title>Sakib Ali | Services</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Sakib Ali</span>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="portfolio.html">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="service.html">Services</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="blog.html">Blogs</a></div>
+        <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skill.html">Skills</a>
+        <a href="service.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-container" data-aos="fade-up" data-aos-duration="1000">
+      <h2>What I Do</h2>
+      <p class="services-intro">
+        I offer a range of web design and development services to help you build a professional online presence.
+        Whether you need a full website, UI/UX improvements, or CMS integration — I've got you covered.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+          <p>Building responsive, fast, and scalable websites using HTML, CSS, JavaScript, React, and Next.js.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-layer-group"></i>
+          <h3>UI/UX Design</h3>
+          <p>Designing user-focused interfaces that look great and feel intuitive across all devices.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fab fa-wordpress-simple"></i>
+          <h3>WordPress Customization</h3>
+          <p>Basic setup, theme customization, and content editing for WordPress sites.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-search-dollar"></i>
+          <h3>SEO Optimization</h3>
+          <p>Boost site visibility with SEO techniques focused on speed, structure, and content quality.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Basic Graphic Design</h3>
+          <p>Simple logo design and asset editing using Photoshop for digital use.</p>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <i class="fas fa-tools"></i>
+          <h3>Maintenance & Support</h3>
+          <p>Ongoing updates, bug fixing, and support to keep your site running smoothly.</p>
+        </div>
+      </div>
+
+      <div class="services-cta" data-aos="fade-up" data-aos-delay="700">
+        <a href="contact.html" class="btn">Let’s Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>

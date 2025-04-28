@@ -1,0 +1,51 @@
+@property -gh{
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: false;
+}
+ :root{
+    --brad:0.4rem;
+ }
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #0e0e0e;
+    color: #fff;
+    font-family: monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    gap: 1rem;
+
+}
+.card{
+    position: relative;
+    width: 200px;
+    padding: 1rem 2rem;
+    border-radius: var(--brad);
+    background: color-mix(var(--bg), #fff);
+    overflow: hidden;
+}
+.card_backdrop{
+    --grad:hsl(from var(--bg) h 20 50)
+    position:absolute;
+    inset: 0;
+    background-image: radial-gradient(150% var (--gh) at 25% 100%, var (--grad),transparent), 
+    radial-gradient(150% calc(300% -var(--gh)+25%) at 75% 100%), var(--grad), transparent);
+    animation: wobble 3s infinite alternate ;
+    transition:--gy 1s ease:
+}
+    &::before{
+        content:"";
+
+position: absolute;
+inset: 0 1 rem;
+background: rgba(0, 0, 0,0/0.2);
+background: var(--brad);
+backdrop-filter: blur(100px) contarst(10);
+
+    }
+
+
+

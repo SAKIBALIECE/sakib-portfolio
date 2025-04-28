@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sakib Ali Portfolio" />
+  <meta name="keywords" content="HTML, CSS, JavaScript, React.js, Next.js" />
+  <meta name="author" content="Sakib Ali" />
+  <meta name="robots" content="noindex" />
+  <meta name="googlebot" content="notranslate" />
+  <meta name="googlebot-news" content="nosnippet" />
+
+  <title>Sakib Ali | Services</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        <span>Sakib Ali</span>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="portfolio.html">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skill.html">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="service.html">Services</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="blog.html">Blogs</a></div>
+        <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="dropdown">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skill.html">Skills</a>
+        <a href="service.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Blog Section -->
+ <section class="blogs" id="blogs">
+    <div class="blogs-container" data-aos="fade-up">
+      <h2>Latest Blog Posts</h2>
+      <p class="blog-intro">Thoughts, tutorials, and insights from my journey as a web developer.</p>
+  
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="analytics.jpg" alt="React Blog" class="blog-thumb">
+          <div class="blog-content">
+            <span class="meta">By Sakib Ali | Apr 2025</span>
+            <h3>Getting Started with React</h3>
+            <p>A quick intro to building your first React app and understanding components, props, and state.</p>
+            <div class="tags"><span>#React</span> <span>#Frontend</span></div>
+            <a href="#" class="read-btn">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <!-- Blog Post 2 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="profile-pic (1).png" alt="CSS Blog" class="blog-thumb">
+          <div class="blog-content">
+            <span class="meta">By Sakib Ali | Apr 2025</span>
+            <h3>Tips for Clean CSS</h3>
+            <p>Here’s how you can keep your stylesheets clean, modular, and scalable with best practices.</p>
+            <div class="tags"><span>#CSS</span> <span>#WebDesign</span></div>
+            <a href="#" class="read-btn">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+  
+        <!-- Blog Post 3 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="hero-bg.png" alt="Next.js Blog" class="blog-thumb">
+          <div class="blog-content">
+            <span class="meta">By Sakib Ali | Apr 2025</span>
+            <h3>Why Use Next.js</h3>
+            <p>Explore the power of server-side rendering and routing with the Next.js framework.</p>
+            <div class="tags"><span>#NextJS</span> <span>#SSR</span></div>
+            <a href="#" class="read-btn">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 0 });
+    function hamburg() {
+      document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+    function cancel() {
+      document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+    }
+  </script>
+</body>
+</html>
